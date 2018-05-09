@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Products", "Domain\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.EFCore", "Data\Data.EFCore\Data.EFCore.csproj", "{699A8651-FC3A-4808-95A1-B50D203901E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.UI", "Presentation\Web.UI\Web.UI.csproj", "{AE77347A-846A-4E40-AFDB-DC8764ED093D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{699A8651-FC3A-4808-95A1-B50D203901E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{699A8651-FC3A-4808-95A1-B50D203901E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{699A8651-FC3A-4808-95A1-B50D203901E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE77347A-846A-4E40-AFDB-DC8764ED093D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE77347A-846A-4E40-AFDB-DC8764ED093D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE77347A-846A-4E40-AFDB-DC8764ED093D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE77347A-846A-4E40-AFDB-DC8764ED093D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{9EA05EEE-BBDA-4440-A499-F7871A0B6149} = {107B1820-4F73-4717-9884-120B5A352DC0}
 		{B015A82D-D267-4214-AE8E-5AB9962694AE} = {107B1820-4F73-4717-9884-120B5A352DC0}
 		{699A8651-FC3A-4808-95A1-B50D203901E0} = {10DB79A6-5962-4664-B83E-B6FEBCD25CBC}
+		{AE77347A-846A-4E40-AFDB-DC8764ED093D} = {E1C04439-4C07-420D-BD18-656A521885B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5AC213B-2039-495F-8B56-98116B2F65FA}
