@@ -12,6 +12,7 @@ namespace Data.EFCore
         {
             base.OnModelCreating(builder);
 
+            builder.ApplyConfiguration(new DomainEventConfiguration());
             builder.ApplyConfiguration(new ProductTypeConfiguration());
             builder.ApplyConfiguration(new ProductCategoryConfiguration());
             builder.ApplyConfiguration(new ProductConfiguration());
@@ -19,6 +20,7 @@ namespace Data.EFCore
             builder.ApplyConfiguration(new ProductSpecificationConfiguration());
         }
 
+        public DbSet<DomainEventEntity> DomainEvents { get; set; }
         public DbSet<ProductTypeEntity> ProductTypes { get; set; }
         public DbSet<ProductCategoryEntity> ProductCategories { get; set; }
         public DbSet<ProductEntity> Products { get; set; }

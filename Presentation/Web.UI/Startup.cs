@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Data.EFCore.Extensions;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +17,8 @@ namespace Web.UI
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.ConfigureDataServices(this.Configuration);
+
             services.AddMvc();
         }
 
