@@ -1,7 +1,41 @@
-﻿
+﻿@model Web.UI.Models.Home.HomeViewModel
 @{
     ViewData["Title"] = "Home";
 }
 
 <h2>Home</h2>
 
+<h4>Latest Product IDs</h4>
+<ul>
+    @foreach (var productId in Model.LatestProductIds)
+    {
+        <li>@productId</li>
+    }
+</ul>
+
+<h4>Latest Products (@Model.LatestProducts.Count())</h4>
+<table>
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Type</th>
+            <th># of images</th>
+            <th># of specs</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.LatestProducts)
+        {
+            <tr>
+                <td>@product.ProductId</td>
+                <td>@product.Name</td>
+                <td>@product.Category</td>
+                <td>@product.Type</td>
+                <td>@product.ImageCount</td>
+                <td>@product.SpecCount</td>
+            </tr>
+        }
+    </tbody>
+</table>
